@@ -906,24 +906,65 @@ function move_B2(cube) {
   move_B(cube);
 }
 
-// ----- Driver Code Example -----
-const cube = new RubiksCube(3);
-console.log(cube.toString());
-console.log("Is solved?", cube.isSolved());
+// // ----- Driver Code Example -----
+// const cube = new RubiksCube(3);
+// console.log(cube.toString());
+// console.log("Is solved?", cube.isSolved());
 
-// Try some moves:
-move_Uw(cube, 2);
-console.log("\nAfter Uw move:");
-console.log(cube.toString());
+// // Try some moves:
+// move_Uw(cube, 2);
+// console.log("\nAfter Uw move:");
+// console.log(cube.toString());
 
-move_Uw_prime(cube, 2);
-console.log("\nAfter Uw' move:");
-console.log(cube.toString());
+// move_Uw_prime(cube, 2);
+// console.log("\nAfter Uw' move:");
+// console.log(cube.toString());
 
-move_Fw(cube, 2);
-console.log("\nAfter Fw move:");
-console.log(cube.toString());
+// move_Fw(cube, 2);
+// console.log("\nAfter Fw move:");
+// console.log(cube.toString());
 
-move_M(cube);
-console.log("\nAfter M move (middle slice):");
-console.log(cube.toString());
+// move_M(cube);
+// console.log("\nAfter M move (middle slice):");
+// console.log(cube.toString());
+
+
+module.exports = {
+  RubiksCube,
+  move_U,
+  move_U_prime,
+  move_U2,
+  move_Uw,
+  move_Uw_prime,
+  move_D,
+  move_D_prime,
+  move_D2,
+  move_Dw,
+  move_Dw_prime,
+  move_L,
+  move_L_prime,
+  move_L2,
+  move_Lw,
+  move_Lw_prime,
+  move_R,
+  move_R_prime,
+  move_R2,
+  move_Rw,
+  move_Rw_prime,
+  move_F,
+  move_F_prime,
+  move_F2,
+  move_Fw,
+  move_Fw_prime,
+  move_B,
+  move_B_prime,
+  move_B2,
+  move_Bw,
+  move_Bw_prime,
+  move_E,
+  move_E_prime,
+  move_M,
+  move_M_prime,
+  move_S,
+  move_S_prime
+};
